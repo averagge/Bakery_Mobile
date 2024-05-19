@@ -1,0 +1,41 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App3.Page7"
+             BackgroundColor="White">
+
+    <StackLayout Padding="20">
+        <!-- Имя пользователя -->
+        <Label Text="Жансбек" FontSize="20" HorizontalOptions="Center" Margin="0,20,0,0" />
+
+        <!-- Список разделов личного кабинета -->
+        <ListView VerticalOptions="FillAndExpand" SeparatorVisibility="None">
+            <ListView.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>ЗАКАЗЫ</x:String>
+                    <x:String>АДРЕСА</x:String>
+                    <x:String>НАСТРОЙКИ</x:String>
+                    <x:String>СПОСОБЫ ОПЛАТЫ</x:String>
+                </x:Array>
+            </ListView.ItemsSource>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Padding="10">
+                            <Label Text="{Binding .}" FontSize="18" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <!-- Кнопка "Связаться с нами" -->
+        <Button Text="Связаться с нами" BackgroundColor="#4EA429" TextColor="White" CornerRadius="10" Margin="0,20,0,0" />
+
+        <!-- Надпись "Ответы на вопросы" -->
+        <Label Text="Ответы на вопросы" FontSize="16" TextColor="Gray" Margin="0,20,0,0" />
+
+        <!-- Надпись "Правила и соглашения" -->
+        <Label Text="Правила и соглашения" FontSize="16" TextColor="Gray" Margin="0,20,0,0" />
+    </StackLayout>
+
+</ContentPage>

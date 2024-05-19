@@ -1,0 +1,18 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App3.Page11"
+             BackgroundColor="White">
+    <StackLayout Padding="20">
+        <!-- Список карт -->
+        <Label Text="Добавить карту" FontSize="18" Margin="0,0,0,10" />
+        <Label Text="Карта ***1234" FontSize="16" Margin="0,0,0,5" />
+        <Label Text="Карта ***1234" FontSize="16" Margin="0,0,0,5" />
+        <Label Text="Карта ***1234" FontSize="16" Margin="0,0,0,5" />
+        <Label Text="Карта ***1234" FontSize="16" Margin="0,0,0,5" />
+        <Label Text="Карта ***1234" FontSize="16" Margin="0,0,0,5" />
+
+        <!-- Кнопка "Новый адрес" -->
+        <Button Text="Новый адрес" Clicked="NewAddressButton_Clicked"
+                BackgroundColor="#4EA429" TextColor="White" CornerRadius="10" />
+    </StackLayout>
+</ContentPage>

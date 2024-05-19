@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App3.Page4"
+             BackgroundColor="White">
+    <StackLayout VerticalOptions="Center" Spacing="20" Padding="20">
+        <!-- Надпись "Введите адрес" -->
+        <Label Text="Введите адрес" HorizontalOptions="Center" />
+
+        <!-- Поле для ввода улицы -->
+        <Entry Placeholder="Улица" />
+
+        <!-- Поле для ввода дома -->
+        <Entry Placeholder="Дом" />
+
+        <!-- Поле для ввода города -->
+        <Entry Placeholder="Город" />
+
+        <!-- Кнопка "Да, все верно" -->
+        <Button Text="Да, все верно"
+                BackgroundColor="#4EA429"
+                TextColor="White"
+                CornerRadius="10"
+                Clicked="YesButton_Clicked"
+                HorizontalOptions="Center" />
+    </StackLayout>
+</ContentPage>

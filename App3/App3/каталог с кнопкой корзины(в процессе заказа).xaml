@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App3.Page13"
+             BackgroundColor="White">
+    <ScrollView>
+        <StackLayout VerticalOptions="StartAndExpand" Padding="20">
+            <!-- Поиск товара -->
+            <Entry Placeholder="Поиск товара" />
+
+            <!-- Кнопка перехода на личный кабинет --><!--
+            <Button Text="Личный кабинет" Clicked="ProfileButton_Clicked" HorizontalOptions="End" />-->
+
+            <!-- Список товаров -->
+            <ScrollView VerticalOptions="FillAndExpand">
+                <StackLayout Spacing="20">
+                    <!-- Кнопка с фреймом товара -->
+                    <Frame CornerRadius="10" Padding="10" BackgroundColor="#EEEEEE">
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Frame_Tapped" />
+                        </Frame.GestureRecognizers>
+                        <StackLayout>
+                            <Image Source="product_image1.jpg" Aspect="AspectFill" />
+                            <Label Text="Название товара 1" FontSize="18" />
+                            <Label Text="Вес: 100 г" FontSize="16" />
+                            <Button Text="Цена: $10" BackgroundColor="#4EA429" TextColor="White" CornerRadius="10" />
+                        </StackLayout>
+                    </Frame>
+
+
+                    <!-- Добавьте другие кнопки с фреймами товаров по аналогии -->
+
+                </StackLayout>
+            </ScrollView>
+
+            <!-- Кнопка корзины -->
+            <Button Text="Ваш заказ" Clicked="OrderButton_Clicked" BackgroundColor="#4EA429" TextColor="White" CornerRadius="10" HorizontalOptions="End" Margin="0,20,0,0" />
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

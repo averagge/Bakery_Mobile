@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App3.Page1"
+ BackgroundColor="#4EA429">
+    <AbsoluteLayout>
+        <StackLayout Spacing="20"
+                     AbsoluteLayout.LayoutBounds="0.5,0.4,0.8,0.6"
+                     AbsoluteLayout.LayoutFlags="All">
+            <!-- Поле для ввода логина -->
+            <Label Text="Логин" TextColor="Black" FontSize="16" />
+            <Frame CornerRadius="5" HasShadow="False" Padding="5,0">
+                <Entry TextChanged="OnEntryTextChanged1" 
+                    Placeholder="Введите логин"
+                       PlaceholderColor="Black"
+                       TextColor="Black"
+                       BackgroundColor="White"
+                       HorizontalOptions="FillAndExpand" 
+                       x:Name="login"/>
+            </Frame>
+
+            <!-- Поле для ввода пароля -->
+            <Label Text="Пароль" TextColor="Black" FontSize="16" />
+            <Frame CornerRadius="5" HasShadow="False" Padding="5,0">
+                <Entry TextChanged="OnEntryTextChanged1"
+                    Placeholder="Введите пароль"
+                       PlaceholderColor="Black"
+                       TextColor="Black"
+                       BackgroundColor="White"
+                       IsPassword="True"
+                       HorizontalOptions="FillAndExpand" 
+                       x:Name="password"/>
+            </Frame>
+
+            <!-- Кнопка "Войти" -->
+            <Button Text="Войти"
+                    BackgroundColor="Black"
+                    TextColor="White"
+                    CornerRadius="10"
+                    Clicked="GetCodeButton_Clicked"
+                    HorizontalOptions="FillAndExpand" />
+
+            <!-- Гиперссылка "Зарегистрироваться" -->
+            <Label TextColor="White">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                </Label.GestureRecognizers>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Нет аккаунта? " />
+                        <Span Text="Зарегистрироваться"
+                              TextColor="white" />
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+        </StackLayout>
+    </AbsoluteLayout>
+</ContentPage>
+
+

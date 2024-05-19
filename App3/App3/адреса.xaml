@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App3.Page3"
+             BackgroundColor="White">
+    <StackLayout VerticalOptions="Center" Spacing="20">
+        <!-- Надпись "Введите адрес" -->
+        <Label Text="Введите адрес" HorizontalOptions="Center" />
+
+       
+        <!-- Поле для ввода улицы -->
+        <Entry Placeholder="Улица" WidthRequest="300" HorizontalOptions="Center" />
+
+        <!-- Надпись "Набор разных улиц" -->
+        <Label Text="Выберите" HorizontalOptions="Center" />
+
+        <!-- Список улиц -->
+        <ListView x:Name="StreetsListView"
+                  VerticalOptions="FillAndExpand"
+                  HorizontalOptions="Center">
+            <ListView.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Улица 1</x:String>
+                    <x:String>Улица 2</x:String>
+                    <x:String>Улица 3</x:String>
+                    <!-- Добавьте другие улицы по аналогии -->
+                </x:Array>
+            </ListView.ItemsSource>
+        </ListView>
+
+        <!-- Кнопка "Далее" -->
+        <Button Text="Далее"
+                BackgroundColor="#4EA429"
+                TextColor="White"
+                CornerRadius="10"
+                Clicked="NextButton_Clicked"
+                HorizontalOptions="Center" />
+    </StackLayout>
+</ContentPage>

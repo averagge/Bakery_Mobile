@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App3.Page2"
+             BackgroundColor="#4EA429">
+        <ScrollView AbsoluteLayout.LayoutBounds="0.5,0.4,0.8,0.6"
+                    AbsoluteLayout.LayoutFlags="All">
+            <StackLayout Spacing="20" Padding="20">
+                <!-- Надпись "Регистрация" -->
+                <Label Text="Регистрация" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center" TextColor="White" />
+
+                <!-- Поле для ввода логина -->
+                <Label Text="Логин" TextColor="Black" FontSize="16" />
+                <Frame CornerRadius="5" HasShadow="False" Padding="5,0">
+                    <Entry x:Name="UsernameEntry" Placeholder="Введите логин"
+                           PlaceholderColor="Black"
+                           TextColor="Black"
+                           BackgroundColor="White"
+                           HorizontalOptions="FillAndExpand"
+                           TextChanged="OnEntryTextChanged" 
+                           />
+                </Frame>
+
+                <!-- Поле для ввода пароля -->
+                <Label Text="Пароль" TextColor="Black" FontSize="16" />
+                <Frame CornerRadius="5" HasShadow="False" Padding="5,0">
+                    <Entry x:Name="PasswordEntry" Placeholder="Введите пароль"
+                           PlaceholderColor="Black"
+                           TextColor="Black"
+                           BackgroundColor="White"
+                           IsPassword="True"
+                           HorizontalOptions="FillAndExpand"
+                           TextChanged="OnEntryTextChanged" />
+                </Frame>
+
+                <!-- Поле для ввода фамилии -->
+                <Label Text="Фамилия" TextColor="Black" FontSize="16" />
+                <Frame CornerRadius="5" HasShadow="False" Padding="5,0">
+                    <Entry x:Name="LastNameEntry" Placeholder="Введите фамилию"
+                           Keyboard="Text"
+           PlaceholderColor="Black"
+           TextColor="Black"
+           BackgroundColor="White"
+           HorizontalOptions="FillAndExpand"
+           TextChanged="OnEntryTextChanged" />
+                </Frame>
+
+
+                <!-- Поле для ввода имени -->
+                <Label Text="Имя" TextColor="Black" FontSize="16" />
+                <Frame CornerRadius="5" HasShadow="False" Padding="5,0">
+                    <Entry x:Name="FirstNameEntry" Placeholder="Введите имя"
+                                                      Keyboard="Text"
+
+           PlaceholderColor="Black"
+           TextColor="Black"
+           BackgroundColor="White"
+           HorizontalOptions="FillAndExpand"
+           TextChanged="OnEntryTextChanged" />
+                </Frame>
+
+                <!-- Поле для ввода электронной почты -->
+                <Label Text="Электронная почта" TextColor="Black" FontSize="16" />
+                <Frame CornerRadius="5" HasShadow="False" Padding="5,0">
+                    <Entry x:Name="EmailEntry" Placeholder="Введите электронную почту"
+                           PlaceholderColor="Black"
+                           TextColor="Black"
+                           BackgroundColor="White"
+                           Keyboard="Email"
+                           HorizontalOptions="FillAndExpand"
+                           TextChanged="OnEntryTextChanged" />
+                </Frame>
+
+                <!-- Поле для ввода телефона -->
+                <Label Text="Телефон" TextColor="Black" FontSize="16" />
+                <Frame CornerRadius="5" HasShadow="False" Padding="5,0">
+                    <Entry x:Name="PhoneEntry" Placeholder="Введите телефон"
+           PlaceholderColor="Black"
+           TextColor="Black"
+           BackgroundColor="White"
+           Keyboard="Telephone"
+           HorizontalOptions="FillAndExpand"
+           MaxLength="11"
+           TextChanged="OnPhoneEntryTextChanged" />
+                </Frame>
+                <!-- Кнопка "Зарегистрироваться" -->
+                <Button Text="Зарегистрироваться"
+                        BackgroundColor="Black"
+                        TextColor="White"
+                        CornerRadius="10"
+                        Clicked="ContinueButton_Clicked"
+                        HorizontalOptions="FillAndExpand" />
+
+                <!-- Гиперссылка "Уже есть аккаунт" -->
+                <Label HorizontalOptions="Center" TextColor="White">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" />
+                    </Label.GestureRecognizers>
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Уже есть аккаунт? " />
+                            <Span Text="Войти"
+                                  TextColor="White" />
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </StackLayout>
+        </ScrollView>
+</ContentPage>

@@ -1,0 +1,53 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App3.Page6">
+
+    <ScrollView>
+        <StackLayout Padding="20">
+            <!-- Картинка товара -->
+            <Image Source="your_product_image.jpg" Aspect="AspectFill" HeightRequest="200" />
+
+            <!-- Описание товара -->
+            <Label Text="Самса, с курицей"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   TextColor="Black"
+                   HorizontalOptions="Center" />
+
+            <Label Text="1 кг"
+                   FontSize="16"
+                   TextColor="Black"
+                   HorizontalOptions="Center" />
+
+            <Label Text="в 100 граммах"
+                   FontSize="16"
+                   TextColor="Black"
+                   HorizontalOptions="Center" />
+
+            <StackLayout>
+                <!-- Данные о пищевой ценности -->
+                <Label Text="Пищевая ценность на 100 грамм:" FontSize="18" FontAttributes="Bold" TextColor="Black" />
+                <Label Text="Ккал: 0" FontSize="16" TextColor="Black" />
+                <Label Text="Белки: 0" FontSize="16" TextColor="Black" />
+                <Label Text="Жиры: 0" FontSize="16" TextColor="Black" />
+                <Label Text="Углеводы: 0" FontSize="16" TextColor="Black" />
+            </StackLayout>
+
+            <!-- Состав товара -->
+            <Label Text="Состав:" FontSize="18" FontAttributes="Bold" TextColor="Black" />
+            <Label Text="Мука пшеничная, масло сливочное, вода, соль, яйца, фарш мясной, лук, перец черный молотый"
+                   FontSize="16"
+                   TextColor="Black" />
+
+            <!-- Кнопка "Добавить товар" -->
+            <Button Text="Добавить товар"
+                    BackgroundColor="#FFA500"
+                    TextColor="White"
+                    Clicked="AddToCartButton_Clicked"
+                    CornerRadius="10"
+                    Margin="0,20,0,0"
+                    HorizontalOptions="FillAndExpand" />
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

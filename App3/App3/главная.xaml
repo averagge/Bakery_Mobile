@@ -1,0 +1,39 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App3.MainPage"
+             Padding="0">
+
+    <ContentPage.Content>
+        <AbsoluteLayout>
+
+            <Image Source="https://mykaleidoscope.ru/x/uploads/posts/2022-09/1663793136_52-mykaleidoscope-ru-p-samaya-appetitnaya-yeda-yeda-instagram-59.jpg"
+                   Aspect="AspectFill"
+                   AbsoluteLayout.LayoutBounds="0,0,1,1"
+                   AbsoluteLayout.LayoutFlags="All" />
+
+       
+            <!--<Button Text="Выбрать адрес доставки"
+                    BackgroundColor="#4EA429"
+                    TextColor="White"
+                    BorderColor="Black"
+                    BorderWidth="2"
+                    Clicked="AddressButton_Clicked"
+                    CornerRadius="20"
+                    AbsoluteLayout.LayoutBounds="0.5,0.7,0.8,0.1"
+                    AbsoluteLayout.LayoutFlags="All" />-->
+
+            
+            <Button Text="Войти"
+                    BackgroundColor="#4EA429"
+                    TextColor="Black"
+                    BorderColor="Black"
+                    BorderWidth="2"
+                    Clicked="LoginButton_Clicked"
+                    CornerRadius="20"
+                    Opacity="0.8"
+                    AbsoluteLayout.LayoutBounds="0.5,0.85,0.8,0.1"
+                    AbsoluteLayout.LayoutFlags="All" />
+        </AbsoluteLayout>
+    </ContentPage.Content>
+
+</ContentPage>

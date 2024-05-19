@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App3._false">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+            <!-- Надпись "ВАШ ЗАКАЗ ПРИНЯТ" -->
+            <Label Text="ВАШ ЗАКАЗ НЕ ПРИНЯТ" FontSize="24" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+
+            <!-- Кнопка "Вернуться на главную" -->
+            <Button Text="Вернуться на главную"
+                Clicked="ReturnToMainButton_Clicked"
+                BackgroundColor="#4EA429"
+                TextColor="White"
+                CornerRadius="10"
+                Margin="0,20,0,0" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

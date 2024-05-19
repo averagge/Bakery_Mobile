@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App3.Page9"
+             BackgroundColor="White">
+    <StackLayout VerticalOptions="CenterAndExpand" Padding="20">
+        <!-- Поле для ввода нового имени -->
+        <Entry Placeholder="Введите новое имя" x:Name="NewNameEntry" />
+
+        <!-- Кнопка "Сохранить" -->
+        <Button Text="Сохранить" Clicked="SaveButton_Clicked" BackgroundColor="#4EA429" TextColor="White" CornerRadius="10" Margin="0,20,0,0" />
+    </StackLayout>
+</ContentPage>

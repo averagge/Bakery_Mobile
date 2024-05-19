@@ -1,0 +1,118 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+    <ProduceReferenceAssemblyInOutDir>true</ProduceReferenceAssemblyInOutDir>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySqlConnector" Version="2.3.7" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="оплата.xaml.cs">
+      <DependentUpon>оплата.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="каталог с кнопкой корзины(в процессе заказа).xaml.cs">
+      <DependentUpon>каталог с кнопкой корзины%28в процессе заказа%29.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="корзина.xaml.cs">
+      <DependentUpon>корзина.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="карты.xaml.cs">
+      <DependentUpon>карты.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="личные адреса.xaml.cs">
+      <DependentUpon>личные адреса.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="изменение имени.xaml.cs">
+      <DependentUpon>изменение имени.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="личная информация о клиенте.xaml.cs">
+      <DependentUpon>личная информация о клиенте.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="личный кабинет.xaml.cs">
+      <DependentUpon>личный кабинет.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="карточка продукта.xaml.cs">
+      <DependentUpon>карточка продукта.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="каталог.xaml.cs">
+      <DependentUpon>каталог.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="ввод улицы.xaml.cs">
+      <DependentUpon>ввод улицы.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="адреса.xaml.cs">
+      <DependentUpon>адреса.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="вход(получение кода).xaml.cs">
+      <DependentUpon>вход%28получение кода%29.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="вход.xaml.cs">
+      <DependentUpon>вход.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="главная.xaml.cs">
+      <DependentUpon>главная.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="false.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="вход.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="личные адреса.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="карты.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="корзина.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="каталог с кнопкой корзины(в процессе заказа).xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="оплата.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="вход(получение кода).xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="адреса.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="ввод улицы.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="каталог.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="карточка продукта.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="личный кабинет.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="личная информация о клиенте.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="изменение имени.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="succesfull.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

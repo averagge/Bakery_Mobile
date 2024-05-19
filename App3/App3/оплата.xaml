@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App3.Page14"
+             BackgroundColor="White">
+    <ScrollView>
+      
+
+        <StackLayout Padding="20" Spacing="20">
+
+            <!-- Детали доставки -->
+            <Frame Padding="10" BackgroundColor="#f0f0f0" CornerRadius="10">
+                <StackLayout Spacing="5">
+                    <Label Text="Детали доставки" FontSize="20" FontAttributes="Bold" TextColor="#333" />
+                    <StackLayout x:Name="deliveryMethodPickerLayout" Spacing="10">
+                        <!-- Здесь вы можете разместить ваш Picker для выбора способа доставки -->
+                </StackLayout>
+
+                <StackLayout x:Name="deliveryAddressEntryLayout" Spacing="10">
+                    <!-- Здесь вы можете разместить ваш Entry для ввода адреса доставки -->
+                </StackLayout>
+        </StackLayout>
+            </Frame>
+
+            <!-- Детали заказа -->
+            <!--<Frame Padding="10" BackgroundColor="#f0f0f0" CornerRadius="10">
+                <StackLayout Spacing="10">
+                    <Label Text="Детали заказа" FontSize="20" FontAttributes="Bold" TextColor="#333" />
+                    <Label Text="Самса, с курицей" FontSize="16" TextColor="#555" />
+                    <Label Text="раскупили" FontSize="16" TextColor="Red" />
+                    <Label Text="1 кг" FontSize="16" TextColor="#555" />
+                    <Label Text="Заменить: 0 р" FontSize="16" TextColor="#555" />
+                    <Label Text="Добрий кола 1 л" FontSize="16" TextColor="#555" />
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="1" FontSize="16" TextColor="#555" />
+                        <Label Text="+ 89 р" FontSize="16" TextColor="#555" />
+                    </StackLayout>
+                    <Label Text="Не добрий 1 л" FontSize="16" TextColor="#555" />
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="1" FontSize="16" TextColor="#555" />
+                        <Label Text="+ 90 р" FontSize="16" TextColor="#555" />
+                    </StackLayout>
+                </StackLayout>
+            </Frame>-->
+
+            <!-- Оплата -->
+            <Frame Padding="10" BackgroundColor="#f0f0f0" CornerRadius="10">
+                <StackLayout Spacing="5">
+                    <Label Text="Оплата" FontSize="20" FontAttributes="Bold" TextColor="#333" />
+                    <StackLayout Orientation="Horizontal" Spacing="10">
+               
+                        <Entry Keyboard="Telephone" MaxLength="16" x:Name="PaymentMethodEntry" Placeholder="Введите номер карты" FontSize="16" TextColor="#555" />
+                    </StackLayout>
+                </StackLayout>
+            </Frame>
+
+
+            <!-- Итого -->
+            <Frame Padding="10" BackgroundColor="#f0f0f0" CornerRadius="10">
+                <StackLayout x:Name="totalPriceLayout"  Orientation="Horizontal" Spacing="10">
+                   
+                    
+                </StackLayout>
+            </Frame>
+            <Button Text="Оплатить"
+                Clicked="ReturnToMainButton_Clicked"
+                BackgroundColor="#4EA429"
+                TextColor="White"
+                CornerRadius="10"
+                Margin="0,20,0,0" />
+
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
